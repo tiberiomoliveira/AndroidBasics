@@ -1,0 +1,100 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidbasics"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="preferExternal" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:debuggable="true" >
+        <activity
+            android:name=".AndroidBasicsStarter"
+            android:label="@string/activity_android_basics_starter"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tests.LifeCycleTest"
+            android:label="@string/activity_android_test_life_cycle"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.SingleTouchTest"
+            android:label="@string/activity_android_test_singletouch"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.MultiTouchTest"
+            android:label="@string/activity_android_test_multitouch"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.KeyTest"
+            android:label="@string/activity_android_test_key"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.AccelerometerTest"
+            android:label="@string/activity_android_test_accelerometer"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.AssetsTest"
+            android:label="@string/activity_android_test_assets"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.ExternalStorageTest"
+            android:label="@string/activity_android_test_external_storage"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.SoundPoolTest"
+            android:label="@string/activity_android_test_sound_pool"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.MediaPlayerTest"
+            android:label="@string/activity_android_test_media_player"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.FullScreenTest"
+            android:label="@string/activity_android_test_fullscreen"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.RenderViewTest"
+            android:label="@string/activity_android_test_render_view"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.ShapeTest"
+            android:label="@string/activity_android_test_shape"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.BitmapTest"
+            android:label="@string/activity_android_test_bitmap"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.FontTest"
+            android:label="@string/activity_android_test_font"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.SurfaceViewTest"
+            android:label="@string/activity_android_test_surface_view"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.SwipeTest"
+            android:label="@string/activity_android_test_swipe"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+    </application>
+
+</manifest>

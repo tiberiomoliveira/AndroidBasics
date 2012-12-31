@@ -1,0 +1,11 @@
+I’ve spent a few hours today and yesterday adding behaviour to the hero and monsters. The biggest challenge is keeping monsters apart, having them follow the hero and not tunnel through walls.
+
+For path finding i use a rather simple and unoptimized implementation of A* on a tile grid (though it’s generic enough to work on any graph really). Path finding is only used to guide the hero to the point on the map the user tapped on.
+
+For keeping monsters separated i give them a simple separation steering behaviours. To avoid walls, i implemented simplified obstacle avoidance which exploits the fact that the entities are moving on a tile grid. The monsters follow the hero by simple seeking. Those three steering behaviours (separate, wall avoidance, seeking) actually make for a passable overall experience. Each steering behaviour has a weight, so i can control the contribution of individual steering behaviours to the overall direction a monster takes. E.g. wall avoidance is weighted higher than seeking or separation. This (kinda) guarantees that monsters will prefer overlapping with each other more than tunneling through a wall.
+
+I tried doing A* for every individual monster, but wasn’t happy with the result. Steering behaviours can’t resolve deadlocks resulting from paths that overlap in space and time, which creates stalemates among monsters. There might still be a way to make this work, however, for the simple dungeon maps the seek behaviour should suffice.
+
+There’s a nice paper by Valve on how they solved similar problems in Left 4 Dead. It’s a bit overkill, but some principles i could apply to my scenario as well. Haven’t had time to look into it yet, reactive path following looks pretty much what i had before i killed A* path finding for monsters. Thanks to Dave (@redskyforge) for pointing me at the presentation.
+
+Here’s the obligatory screenshot, green lines show the velocity/direction, red lines show the steering force/acceleration. Blue tiles are the path nodes the hero follows.

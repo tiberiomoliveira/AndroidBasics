@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">AndroidBasics</string>
+    <string name="menu_settings">Settings</string>
+    <string name="activity_android_basics_starter">Android Basics Starter</string>
+    <string name="activity_android_test_life_cycle">Life Cycle Test</string>
+    <string name="activity_android_test_singletouch">Singletouch Test</string>
+    <string name="activity_android_test_multitouch">Multitouch Test</string>
+    <string name="activity_android_test_key">Key Test</string>
+    <string name="activity_android_test_accelerometer">Accelerometer Test</string>
+    <string name="activity_android_test_assets">Assets Test</string>
+    <string name="activity_android_test_external_storage">External Storage Test</string>
+    <string name="activity_android_test_sound_pool">Sound Pool Test</string>
+    <string name="activity_android_test_media_player">Media Player Test</string>
+    <string name="activity_android_test_fullscreen">Fullscreen Test</string>
+    <string name="activity_android_test_render_view">Render View Test</string>
+    <string name="activity_android_test_shape">Shape Test</string>
+    <string name="activity_android_test_bitmap">Bitmap Test</string>
+    <string name="activity_android_test_font">Font Test</string>
+    <string name="activity_android_test_surface_view">Surface View Test</string>
+    <string name="activity_android_test_swipe">Swipe Test</string>
+
+</resources>
