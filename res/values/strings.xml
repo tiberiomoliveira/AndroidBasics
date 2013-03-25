@@ -19,5 +19,6 @@
     <string name="activity_android_test_font">Font Test</string>
     <string name="activity_android_test_surface_view">Surface View Test</string>
     <string name="activity_android_test_swipe">Swipe Test</string>
+    <string name="activity_android_test_touch_swipe">Touch and Swipe Test</string>
 
 </resources>

@@ -25,7 +25,8 @@ public class AndroidBasicsStarter extends ListActivity {
 					   "BitmapTest",
 					   "FontTest",
 					   "SurfaceViewTest",
-					   "SwipeTest"};
+					   "SwipeTest",
+					   "TouchAndSwipeTest"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

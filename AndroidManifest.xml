@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidbasics"
     android:versionCode="1"
@@ -17,8 +18,7 @@
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:debuggable="true" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".AndroidBasicsStarter"
             android:label="@string/activity_android_basics_starter"
@@ -94,6 +94,10 @@
         <activity
             android:name=".tests.SwipeTest"
             android:label="@string/activity_android_test_swipe"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".tests.TouchAndSwipeTest"
+            android:label="@string/activity_android_test_touch_swipe"
             android:configChanges="keyboard|keyboardHidden|orientation" />
     </application>
 
